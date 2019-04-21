@@ -11,6 +11,11 @@ group = 'io.pivotal.shinyay'
 version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '1.8'
 
+dokka {
+	outputFormat = 'html'
+	outputDirectory = "$buildDir/javadoc"
+}
+
 repositories {
 	mavenCentral()
 	maven { url 'https://dl.bintray.com/kotlin/dokka' }
